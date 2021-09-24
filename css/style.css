@@ -7,7 +7,7 @@ html{
     font-family: 'Montserrat', sans-serif;
     background: url(../img/bk-site.png) no-repeat center / cover;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 120%;
 }
 .container{
     max-width: 1410px;
@@ -122,6 +122,11 @@ span{
     line-height: 150%;
     color: #000000;
 }
+.link:hover{
+    color: #FF9900;
+    text-shadow: 0px 0px 5px #FF9900;
+    transition: 0.5s;
+}
 .nav__link{
     font-size: 18px;
     z-index: 5;
@@ -173,12 +178,12 @@ span{
 .hero::before{
     content: '';
     position: absolute;
-    width: 255px;
+    width: 200px;
     height: 303px;
     top: 0;
     left: 0;
     margin-top: 133px;
-    background: url(../img/meat.png) no-repeat right;
+    background: url(../img/meat.png) no-repeat right / 235px ;
     background-blend-mode: darken;
 }
 .hero::after{
@@ -278,6 +283,7 @@ span{
     padding-top: 12px;
     padding-bottom: 12px;
     margin-bottom: 30px;
+    line-height: 150%;
 }
 .offers{
     max-width: 750px;
@@ -406,10 +412,200 @@ span{
 }
 
 
+.feedback{
+    background: url(../img/hero-bg.png) no-repeat center / cover, linear-gradient(to top ,#fff,#fff);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.feedback::after{
+    content: '';
+    position: absolute;
+    width: 290px;
+    height: 242px;
+    top: 0;
+    right: 0;
+    margin-top: 613px;
+    background: url(../img/tomato-special.png) no-repeat left;
+    background-blend-mode: darken;
+}
+.bl__title{
+    max-width: 660px;
+    position: relative;
+    margin-left: 250px;
+}
+.bl__title::after{
+    content: 'Потому что мы официальный дилер казанов и оказываем лучший сервис в  Беларуси';
+    position: absolute;
+    width: 955px;
+    top: 0;
+    margin-top: 140px;
+    margin-left: 200px;
+}
+.text__part{
+    font-size: 48px;
+    line-height: 120%;
+}
+.desc__out{
+    line-height: 120%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin-left: 200px;
+    margin-top: -5px;
+}
+.comment__desc{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.bl__manager{
+    margin-bottom: 70px;
+    display: flex;
+    max-width: 240px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 10;
+}
+.bl__manager::before{
+    content: '';
+    position: absolute;
+    width: 496px;
+    height: 745px;
+    background: url(../img/alex.png) no-repeat center;
+    margin-top: -538px;
+    margin-right: -85px;
+    z-index: -1;
+}
+.manager{
+    padding: 9px 71px;
+    max-width: 213px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.manager__position{
+    padding: 9px 12px;
+    max-width: 240px;
+    width: 100%;
+    font-size: 15.8px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.bl__feedback{
+    max-width: 1090px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card__feedback{
+    max-width: 330px;
+    width: 100%;
+    height: 220px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0px 18px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.title__cd{
+    font-size: 18px;
+    padding-left: 70px;
+    position: relative;
+}
+.title__cd::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #FF9900;
+    border-radius: 50px;
+    margin-left: -70px;
+}
+.guar::before{
+    background: url(../img/guarantee.svg) no-repeat center, linear-gradient(to top, #FF9900, #FF9900);
+}
+.indus::before{
+    background: url(../img/industry.svg) no-repeat center, linear-gradient(to top, #FF9900, #FF9900);
+}
+.caul::before{
+    background: url(../img/cauldron-bl.svg) no-repeat center, linear-gradient(to top, #FF9900, #FF9900);
+}
+.fast::before{
+    background: url(../img/fast-delivery-bl.svg) no-repeat center, linear-gradient(to top, #FF9900, #FF9900);
+}
+.cred::before{
+    background: url(../img/credit-cards-payment-bl.svg) no-repeat center, linear-gradient(to top, #FF9900, #FF9900);
+}
+.disc__bl::before{
+    background: url(../img/discount-bl.svg) no-repeat center, linear-gradient(to top, #FF9900, #FF9900);
+}
+.desc__card{
+    font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.link__card{
+    font-weight: normal;
+    margin: auto;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.discount__section{
+    background-color: #FF9900;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.bl__event{ 
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .section__instalment{
     background: #FFFFFF;
     padding-top: 30px;
     padding-bottom: 33px;
+    position: relative;
+}
+.section__instalment::before{
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 204px;
+    top: 0;
+    left: 0;
+    margin-top: 68px;
+    background: url(../img/cash.png) no-repeat right;
+    background-blend-mode: darken;
+}
+.section__instalment::after{
+    content: '';
+    position: absolute;
+    width: 203px;
+    height: 262px;
+    top: 0;
+    right: 0;
+    margin-top: -27px;
+    background: url(../img/kaz-1.png) no-repeat left;
+    background-blend-mode: darken;
 }
 .bl__col{
     display: flex;
@@ -434,16 +630,16 @@ span{
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.desc{
+.p__card{
     font-size: 20px;
     line-height: 150%;
 }
 .b{
     font-weight: bold;
 }
+
 
 
 .section__recipe{
@@ -455,6 +651,9 @@ span{
 }
 .title{
     font-size: 48px;
+    line-height: 120%;
+}
+.th{
     line-height: 150%;
 }
 .title__recipe{
@@ -513,17 +712,18 @@ span{
         url(../img/basil-purp.png) no-repeat top right;
     background-blend-mode: darken;
 }
-
 .text__present{
     font-size: 24px;
     max-width: 667px;
     margin-top: 10px;
     margin-bottom: 30px;
+    line-height: 150%;
 }
 .forms{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 40px;
+    line-height: 150%;
 }
 .inp{
     border: none;
@@ -551,7 +751,7 @@ span{
     width: 100%;
 }
 .button--submit{
-    max-width: 565px;
+    max-width: 575px;
     width: 100%;
     margin-top: 50px;
 }
@@ -566,6 +766,135 @@ span{
     top: 0;
     margin-top: 5px;
     margin-left: 8px;
+}
+
+
+.work__section{
+    margin-top: 50px;
+    margin-bottom: 103px;
+}
+.desc{
+    font-size: 24px;
+}
+.desc__up{
+    margin-top: 20px;
+}
+.bl__work{
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.img__cd{
+    padding-top: 160px;
+    position: relative;
+    text-align: center;
+    max-width: 288px;
+}
+.img__cd::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #FF9900;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    margin-left: 20%;
+}
+.cd__1::before{
+    background: url(../img/cd__1.png) no-repeat center;
+}
+.cd__2::before{
+    background: url(../img/cd__2.png) no-repeat center;
+}
+.cd__3::before{
+    background: url(../img/cd__3.png) no-repeat center;
+}
+.cd__4::before{
+    background: url(../img/cd__4.png) no-repeat center;
+}
+.card__title{
+    font-size: 18px;
+    line-height: 150%;
+}
+.arrow{
+    margin-top: 50px;
+}
+
+
+.afg__section{
+    background-color: #fff;
+    padding-top: 97px;
+    padding-bottom: 162px;
+    position: relative;
+}
+.afg__section::after{
+    content: '';
+    position: absolute;
+    width: 309px;
+    height: 390px;
+    top: 0;
+    right: 0;
+    background: url(../img/spice.png) no-repeat right;
+    margin-top: 27px;
+}
+.afg__section::before{
+    content: '';
+    position: absolute;
+    width: 268px;
+    height: 311px;
+    top: 0;
+    left: 0;
+    background: url(../img/meat.png) no-repeat right / 300px;
+    margin-top: 27px;
+}
+.bl__end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bl__afg{
+    max-width: 750px;
+    width: 100%;
+    position: relative;
+}
+.bl__afg::before{
+    content: '';
+    position: absolute;
+    width: 550px;
+    height: 450px;
+    background: url(../img/tomato-2.png) no-repeat 40% 80%,
+                url(../img/pot-3.png) no-repeat left top,
+                url(../img/pot-2.png) no-repeat 82% 66%,
+                url(../img/pepper-2.png) no-repeat 64% top ,
+                url(../img/basil-2.png) no-repeat bottom left,
+                url(../img/basil-purp-2.png) no-repeat bottom right;
+    margin-left: -500px;
+}
+.desc__afg{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    position: relative;
+}
+.desc__afg::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 0;
+    background: url(../img/discount-out-white.png) no-repeat center / 20px;
+    background-color: #FF9900;
+    border-radius: 50px;
+    margin-top: -1.5px;
+}
+.link__afg{
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: normal;
+    margin-left: 90px;
 }
 
 
@@ -617,12 +946,12 @@ span{
     font-size: 24px;
     line-height: 150%; 
 }
-.con-1,.con-2,.con-3{
+.con__1,.con__2,.con__3{
     padding-top: 60px;
     text-align: center;
     position: relative;
 }
-.con-1::before{
+.con__1::before{
     content: '';
     position: absolute;
     width: 50px;
@@ -633,7 +962,7 @@ span{
     margin-top: -60px;
     margin-left: 30%;
 }
-.con-2::before{
+.con__2::before{
     content: '';
     position: absolute;
     width: 50px;
@@ -644,7 +973,7 @@ span{
     margin-top: -60px;
     margin-left: 25%;
 }
-.con-3::before{
+.con__3::before{
     content: '';
     position: absolute;
     width: 50px;
@@ -731,4 +1060,28 @@ span{
 }
 .link__foot{
     font-size: 14px;
+}
+
+
+
+@media (max-width: 1820px) {
+    .hero::before,.hero::after,.section__instalment::after,.section__instalment::before,.feedback::after,.section__present::before,.section__present::after,.afg__section::after,.afg__section::before,.hero__block::after{
+        display: none;
+    }
+}
+@media (max-width: 1680px) {
+    .hero__title::after,.hero__title::before{
+        display: none;
+    }
+}
+@media (max-width: 1540px) {
+    .comment__desc{
+        padding-top: 100px;
+    }
+    .bl__title::after{
+        margin: 0;
+        max-width: 450px;
+        margin-top: 180px;
+    }
+    
 }
